@@ -59,10 +59,10 @@ jobs:
         echo "ARM_GCC_VERSION=$(cat $CONFIG_ENV | grep -w "ARM_GCC_VERSION" | head -n 1 | cut -d "=" -f 2)" >> $GITHUB_ENV
 
 
-    - name: Set swap to 10G
-      uses: pierotofy/set-swap-space@master
-      with:
-        swap-size-gb: 10
+    #- name: Set swap to 10G
+     # uses: pierotofy/set-swap-space@master
+      #with:
+       # swap-size-gb: 10
 
     - name: Setup build kernel environment
       run: |
